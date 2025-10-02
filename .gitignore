@@ -1,5 +1,3 @@
-notes.md
-
 # Virtual Environment
 .venv
 venv/
@@ -22,4 +20,3 @@ build/
 .coverage
 htmlcov/
 .env
-*.png
