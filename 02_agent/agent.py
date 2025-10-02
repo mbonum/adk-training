@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from google.adk.agents import LlmAgent
 from google.adk.runners import InMemoryRunner
 from google.genai import types
+from google.adk.tools import google_search
 
 
 load_dotenv()
@@ -17,7 +18,8 @@ async def main():
         model="gemini-2.5-flash",
         name="root_agent",
         description="A helpful assistant for user questions.",
-        instruction="Answer in the user language.",
+        instruction="I can answer your questions by searching the internet. Just ask me anything!",
+        tools=[google_search],
     )
 
     runner = InMemoryRunner(agent=root_agent)
