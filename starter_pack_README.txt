@@ -1,0 +1,1 @@
+State is used to track the process of a process and several agents need to access it.

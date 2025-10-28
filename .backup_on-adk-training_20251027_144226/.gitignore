@@ -1,0 +1,25 @@
+notes.md
+README.md
+# Virtual Environment
+.venv
+venv/
+env/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# IDE / Editor
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+*.png
